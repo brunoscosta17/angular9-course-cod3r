@@ -1,0 +1,39 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Caneta BIC Preta",
+      "price": 5.89
+    },
+    {
+      "id": 2,
+      "name": "Macbook Pro",
+      "price": 12000.89
+    },
+    {
+      "id": 3,
+      "name": "Samsung S20+",
+      "price": 5000.89
+    },
+    {
+      "name": "Teste",
+      "price": 125.98,
+      "id": 4
+    },
+    {
+      "name": "Teste",
+      "price": 125.98,
+      "id": 5
+    },
+    {
+      "name": "fdsfdsfgdsf",
+      "price": "9.85",
+      "id": 6
+    },
+    {
+      "name": "Lápis preto",
+      "price": 2,
+      "id": 7
+    }
+  ]
+}
