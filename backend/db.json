@@ -26,7 +26,7 @@
       "id": 5
     },
     {
-      "name": "fdsfdsfgdsf",
+      "name": "Iphone 4",
       "price": "9.85",
       "id": 6
     },
@@ -34,6 +34,11 @@
       "name": "Lápis preto",
       "price": 2,
       "id": 7
+    },
+    {
+      "name": "FSDFSD",
+      "price": 34,
+      "id": 8
     }
   ]
 }

@@ -4,11 +4,11 @@ import { ProductService } from '../product.service';
 import { IProduct } from '../product.model';
 
 @Component({
-  selector: 'app-product-update',
-  templateUrl: './product-update.component.html',
-  styleUrls: ['./product-update.component.css']
+  selector: 'app-product-delete',
+  templateUrl: './product-delete.component.html',
+  styleUrls: ['./product-delete.component.css']
 })
-export class ProductUpdateComponent implements OnInit {
+export class ProductDeleteComponent implements OnInit {
 
   product: IProduct = {
     name: '',
@@ -21,16 +21,16 @@ export class ProductUpdateComponent implements OnInit {
     private route: ActivatedRoute
   ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
     const id = this.route.snapshot.paramMap.get('id');
     this.productService.readById(id)
       .subscribe(product => this.product = product);
   }
 
-  updateProduct(): void {
-    this.productService.update(this.product)
+  deleteProduct() {
+    this.productService.delete(this.product.id)
       .subscribe(() => {
-        this.productService.showMessage('Produto atualizado com sucesso!', 'msg_success');
+        this.productService.showMessage('Produto excluído com sucesso!',  'msg_success');
         this.router.navigate(['products']);
       });
   }

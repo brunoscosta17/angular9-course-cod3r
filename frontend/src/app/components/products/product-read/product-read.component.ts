@@ -29,4 +29,7 @@ export class ProductReadComponent implements OnChanges, OnInit {
       .subscribe((response) => this.products = response);
   }
 
+  delete() {
+  }
+
 }
